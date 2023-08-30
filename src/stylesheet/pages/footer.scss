@@ -1,0 +1,107 @@
+footer{
+  color: $white;
+  padding-top: 100px;
+  background-color: $bg-theme;
+  .footer-top{
+    background-size: cover;
+    padding-bottom: 50px;
+    .newsletter{
+      position: relative;
+      top: -95px;
+      background-color: $theme;
+      box-shadow: 0 4px 10px #0c0c0c21;
+      padding: 60px;
+      display: flex;
+      border-radius: 10px;
+      .title{
+        font-size: 40px;
+        font-weight: 700;
+      }
+      .subscribe{
+        width: calc(100% - 473px);
+        margin-left: 20px;
+        margin-top: 19px;
+        .form-group{
+          width: calc(100% - 190px);
+          margin-right: 20px;
+          .form-control{
+            height: 55px;
+            width: 100%;
+          }
+        }
+        .submit-btn{
+          width: 170px;
+          text-transform: uppercase;
+          background-color: $white;
+          border-radius: 10px;
+          border: 1px solid transparent;
+          height: 55px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $theme;
+          font-weight: 500;
+          letter-spacing: 1px;
+          &:hover{
+            transition: all .3s ease-in-out;
+            background-color: $theme;
+            border: 1px solid $white;
+            color: $white;
+          }
+        }
+      }
+    }
+    .item{
+      .logo, .title{
+        margin-bottom: 40px;
+      }
+      .title{
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .email{
+        margin-bottom: 10px;
+      }
+      .menu{
+        padding: 0;
+        margin: 20px 0 0;
+        li{
+          display: block;
+          margin-bottom: 10px;
+          a{
+            display: block;
+            text-decoration: none;
+            color: $white;
+            font-weight: 500;
+          }
+        }
+      }
+      .store{
+        display: flex;
+        flex-direction: column;
+        .apple, .google{
+          display: inline-block;
+          width: 180px;
+          padding: 10px 20px;
+          border-radius: 10px;
+          background-color: $white;
+          &:hover{
+            transition: all .3s ease-in-out;
+            box-shadow: 1px 4px 8px -2px $black-op-5;
+          }
+        }
+        .apple{
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .footer-bottom{
+    padding: 20px 0;
+    border: 1px solid $purple;
+    background-color: $theme;
+    a{
+      color: $white;
+    }
+  }
+}

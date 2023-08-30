@@ -1,0 +1,47 @@
+.page{
+  &.review{
+    background-color: $bg-theme;
+    .review-items{
+      .item{
+        padding: 40px 30px;
+        background-color: $white;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px $shadow;
+        margin-bottom: 20px;
+        .rating{
+          span{
+            display: inline-block;
+            margin-right: 4px;
+            i{
+              font-size: 18px;
+              color: $orange;
+            }
+          }
+        }
+        .title{
+          color: $theme;
+          font-size: 22px;
+          font-weight: 500;
+          margin: 10px 0;
+        }
+        .desc{
+          width: 95%;
+          line-height: 1.7;
+        }
+        .info{
+          display: flex;
+          align-items: center;
+          margin-top: 30px;
+          .details{
+            margin-left: 20px;
+            .name{
+              color: $dark-purple;
+              font-weight: 500;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

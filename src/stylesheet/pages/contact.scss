@@ -1,0 +1,88 @@
+.page{
+  &.contact{
+    background-color: $bg-theme;
+    .content{
+      padding: 60px 0;
+      .contact-form{
+        padding: 40px 60px;
+        box-shadow: 0 4px 10px #EDE9FE;
+        background-color: $white;
+        border-radius: 20px;
+        text-align: center;
+        margin-top: -168px;
+        z-index: 99;
+        position: relative;
+        .body{
+          .form-group{
+            margin-bottom: 20px;
+            textarea{
+              &.form-control{
+                height: 140px;
+              }
+            }
+            .form-control{
+              display: block;
+              width: 100%;
+              font-size: 1rem;
+              line-height: 1.5;
+              color: $black-3;
+              background-color: #fff;
+              background-clip: padding-box;
+              height: 60px;
+              padding: 5px 20px;
+              border: 2px solid $gray-4;
+              border-radius: 12px;
+              font-weight: 500;
+              box-shadow: none;
+              transition: border-color .15s ease-in-out;
+              &:focus{
+                transition: border-color .15s ease-in-out;
+                border: 2px solid $theme;
+              }
+            }
+            span{
+              font-size: 14px;
+              margin-left: 10px;
+              position: relative;
+              top: -1px;
+
+            }
+          }
+        }
+      }
+      .right{
+        margin-left: 50px;
+        .top{
+          .header{
+            text-align: left;
+            margin: 20px 0 30px;
+          }
+          .desc{
+            a{
+              color: $theme;
+            }
+          }
+        }
+        .bottom{
+          margin-top: 40px;
+          .details{
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            .icon{
+
+            }
+            .info{
+              margin-left: 20px;
+              .label{
+                font-size: 20px;
+                font-weight: 500;
+                color: $dark-purple;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

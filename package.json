@@ -9,7 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.3.4"
+    "aos": "^2.3.4",
+    "countup.js": "^2.8.0",
+    "sass": "^1.66.1",
+    "swiper": "^10.2.0",
+    "vue": "^3.3.4",
+    "vue-countup-v2": "^4.0.0",
+    "vue-router": "^4.2.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",

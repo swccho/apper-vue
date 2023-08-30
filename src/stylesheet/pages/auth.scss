@@ -1,0 +1,111 @@
+.page{
+  &.auth{
+    min-height: 100vh;
+    padding: 98px 0;
+    .wrapper{
+      position: relative;
+      .back{
+        position: absolute;
+        left: 0;
+        top: 0;
+        a{
+          color: $white;
+          text-decoration: none;
+          span{
+            margin-right: 5px;
+            i{
+              font-size: 20px;
+            }
+            font-weight: 500;
+          }
+        }
+      }
+      .logo{
+        margin-bottom: 50px;
+        text-align: center;
+      }
+      .content{
+        width: 570px;
+        margin: 0 auto;
+        padding: 40px 0;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px #00000054;
+        background-color: $white;
+        color: $black-4;
+        .form{
+          padding: 10px 40px;
+          text-align: center;
+          margin-top: 10px;
+          .form-group{
+            margin-bottom: 20px;
+            .form-control{
+              display: block;
+              width: 100%;
+              font-size: 1rem;
+              line-height: 1.5;
+              color: $black-3;
+              background-color: #fff;
+              background-clip: padding-box;
+              height: 60px;
+              padding: 5px 20px;
+              border: 2px solid $gray-4;
+              border-radius: 12px;
+              font-weight: 500;
+              box-shadow: none;
+              transition: border-color .15s ease-in-out;
+              &:focus{
+                transition: border-color .15s ease-in-out;
+                border: 2px solid $theme;
+              }
+            }
+          }
+          .btn-theme{
+            margin-top: 10px;
+            min-width: 220px;
+          }
+        }
+        .or{
+          border-bottom: 1px solid $gray-4;
+          text-align: center;
+          margin: 18px 0 30px;
+          span{
+            display: inline-block;
+            background: $white;
+            position: relative;
+            top: 12px;
+            padding: 0 5px;
+          }
+        }
+        .option{
+          padding: 0 40px;
+          text-align: center;
+          .sign-btn{
+            padding: 16px;
+            min-width: 330px;
+            border-radius: 30px;
+            border: 2px solid $gray-4;
+            letter-spacing: 1px;
+            font-weight: 500;
+            text-align: center;
+            color: $black-3;
+            margin: 20px 0 30px;
+            transition: all .3s ease;
+            &:hover{
+              transition: all .3s ease;
+              border: 2px solid $light;
+            }
+            span{
+              margin-left: 20px;
+            }
+          }
+          .switch-page{
+            a{
+              color: $theme;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

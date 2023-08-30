@@ -1,48 +1,48 @@
 <template>
-  <div className="page auth" style="background-image: url('../../../../src/assets/images/form-bg.png')">
-    <div className="container">
-      <div className="wrapper">
-        <div className="back">
+  <div class="page auth" style="background-image: url('../../../../src/assets/images/form-bg.png')">
+    <div class="container">
+      <div class="wrapper">
+        <div class="back">
           <router-link :to="{name: 'Home'}">
-            <i className="las la-arrow-left"></i> Back
+            <i class="las la-arrow-left"></i> Back
           </router-link>
         </div>
-        <div className="logo">
+        <div class="logo">
           <img src="../../../assets/images/footer_logo.png" alt=""/>
         </div>
-        <section className="content">
-          <div className="header">
-            <div className="title">
+        <section class="content">
+          <div class="header">
+            <div class="title">
               Welcome to <span>Apper</span>
             </div>
-            <div className="desc">
+            <div class="desc">
               Fill all fields so we can get some info about you.
               <br/>We'll never send you spam
             </div>
           </div>
-          <div className="form">
+          <div class="form">
             <form>
-              <div className="form-group">
-                <input type="email" className="form-control" placeholder="Email" />
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" />
               </div>
-              <div className="form-group">
-                <input type="password" className="form-control" placeholder="Password" />
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" />
               </div>
-              <button className="btn btn-theme">Sign up</button>
+              <button class="btn btn-theme">Sign up</button>
             </form>
           </div>
-          <div className="or">
+          <div class="or">
             <span>OR</span>
           </div>
-          <div className="option">
-            <div className="title">
+          <div class="option">
+            <div class="title">
               Sign In with your work email
             </div>
-            <button className="btn sign-btn">
+            <button class="btn sign-btn">
               <img src="../../../assets/images/google.png" alt=""/>
               <span>Sign Up with Google</span>
             </button>
-            <div className="switch-page">
+            <div class="switch-page">
               Don't have an account? <router-link :to="{name: 'SignUp'}">Sign Up here</router-link>
             </div>
           </div>

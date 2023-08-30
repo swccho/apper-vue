@@ -120,7 +120,7 @@
         <div class="right">Design & developed by <a href="">Redishketch</a></div>
       </div>
     </div>
-    <a class="go-top active" @click="goTop">
+    <a class="go-top" :class="goTop && 'active'" @click="goTopFunc">
       <img src="../../../../assets/images/go_top.png" alt=""/>
     </a>
   </footer>
@@ -129,12 +129,23 @@
 <script>
 export default {
   data(){
-
+    return {
+      goTop: false
+    }
   },
   methods: {
-    goTop(){
+    goTopFunc(){
       window.scrollTo(0, 0)
     }
+  },
+  mounted() {
+    window.addEventListener("scroll", (event) => {
+      if (window.pageYOffset > 200) {
+        this.goTop = true
+      } else {
+        this.goTop = false
+      }
+    });
   }
 }
 </script>
